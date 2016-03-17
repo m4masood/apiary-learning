@@ -1,0 +1,33 @@
+FORMAT: 1A
+HOST: http://api.spiderlog.net
+
+# Spider Log API
+Providers services for the Spider Log app family, recording the world's spider sighting.
+
+# Group Spiders
+Access to Spider resources
+
+## Get all Spiders - EndPoint [/spiders]
+### Get all my spider [GET]
++ Response 200 (application/json)
+        [
+          { "id": 1,
+            "name": "Spider 1",
+            "type": "Type of Spider 1"
+          },
+          { "id": 1,
+            "name": "Spider 2",
+            "type": "Type of Spider 2"
+          }
+        ]
+
+## Get speicific Spider - EndPoint [/spider/{id}]
+### Get specific Spider [GET]
++ Parameters
+    + id (number) - ID of the spider
++ Response 200 (application/json)
+        { 
+        "id": 1,
+        "name": "Spider 1",
+        "type": "Type of Spider"
+        }
